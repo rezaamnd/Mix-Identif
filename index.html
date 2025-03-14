@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identifikasi Warna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Identifikasi Warna</h1>
+
+        <!-- Tampilan warna target lebih besar -->
+        <div class="color-display" id="targetColorDisplay"></div>
+
+        <!-- Pilihan input warna -->
+        <label for="colorInput">Pilih Warna:</label>
+        <input type="color" id="colorInput" value="#ff0000" onchange="updateColorDisplay()">
+        <input type="text" id="hexInput" placeholder="Masukkan HEX (#RRGGBB)">
+        <input type="text" id="rgbInput" placeholder="Masukkan RGB (r,g,b)">
+        <input type="text" id="cmykInput" placeholder="Masukkan CMYK (c,m,y,k)">
+
+        <!-- Input gambar -->
+        <label for="imageInput">Pilih Gambar:</label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <!-- Input total berat/volume -->
+        <label for="totalWeight">Total Berat/Volume (gr/ml):</label>
+        <input type="number" id="totalWeight" value="0" placeholder="Masukkan berat (gr/ml)">
+
+        <button onclick="analyzeColor()">Analisis</button>
+        <button onclick="resetColor()">Reset</button>
+
+        <canvas id="canvas" style="display: none;"></canvas>
+
+        <!-- Tabel hasil identifikasi -->
+        <div id="result-container">
+            <h2>Hasil Identifikasi:</h2>
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Warna</th>
+                        <th>Persentase (%)</th>
+                        <th>Berat (gr/ml)</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
