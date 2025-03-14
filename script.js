@@ -88,7 +88,7 @@ function rgbToLab(rgb) {
         b: 200 * (y - z)
     };
 }
-
+ 
 function colorDistanceLab(c1, c2) {
     return Math.sqrt(
         Math.pow(c1.l - c2.l, 2) +
