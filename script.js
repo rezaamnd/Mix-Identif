@@ -1,17 +1,36 @@
 const colorDatabase = [
-    { name: "Merah", hex: "#FF0000" },
-    { name: "Hijau", hex: "#00FF00" },
-    { name: "Biru", hex: "#0000FF" },
-    { name: "Kuning", hex: "#FFFF00" },
-    { name: "Cyan", hex: "#00FFFF" },
-    { name: "Magenta", hex: "#FF00FF" },
-    { name: "Hitam", hex: "#000000" },
-    { name: "Putih", hex: "#FFFFFF" },
-    { name: "Abu-abu", hex: "#808080" },
-    { name: "Oranye", hex: "#FFA500" },
-    { name: "Coklat", hex: "#A52A2A" },
-    { name: "Pink", hex: "#FFC0CB" },
-    { name: "Ungu", hex: "#800080" }
+	{ name: "Red Brown", hex: "#800080" },
+	{ name: "Red WIne", hex: "#800080" },
+    { name: "Dark Brown", hex: "#00FF00" },
+    { name: "Red", hex: "#0000FF" },
+    { name: "Orange", hex: "#EDB200" },
+    { name: "Dark Yellow", hex: "#00FFFF" },
+    { name: "Yellow", hex: "#FF00FF" },
+    { name: "Lemon Yellow", hex: "#000000" },
+    { name: "Dark Green", hex: "#FFFFFF" },
+    { name: "Dark Blue", hex: "#808080" },
+    { name: "Blue", hex: "#FFA500" },
+    { name: "Neon Magenta", hex: "#A52A2A" },
+    { name: "Neon Pink", hex: "#FFC0CB" },
+    { name: "Neon Red", hex: "#800080" },
+	{ name: "Neon Orange", hex: "#800080" },
+	{ name: "Neon Yellow", hex: "#800080" },
+	{ name: "Neon Green", hex: "#800080" },
+	{ name: "Neon Blue", hex: "#800080" },
+	{ name: "Neon Purple", hex: "#800080" },
+	{ name: "Metallic Bronze", hex: "#800080" },
+	{ name: "Mettalic Silver", hex: "#800080" },
+	{ name: "Metallic Dark Silver", hex: "#800080" },
+	{ name: "Metallic Gold", hex: "#800080" },
+	{ name: "Metalic Burgundy", hex: "#800080" },
+	{ name: "Metallic Purple", hex: "#800080" },
+	{ name: "Metallic Blue", hex: "#800080" },
+	{ name: "Mettalic Green", hex: "#800080" },
+	{ name: "Mettalic Magenta", hex: "#800080" },
+	{ name: "Metalic Pink", hex: "#800080" }
+	
+	
+	
 ];
 
 function analyzeColor() {
